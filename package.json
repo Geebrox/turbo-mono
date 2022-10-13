@@ -1,0 +1,14 @@
+{
+  "name": "turbo-mono",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "bek <geebrox@gmail.com>",
+  "workspaces": [],
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "packageManager": "yarn@1.22.19",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
