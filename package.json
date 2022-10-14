@@ -1,10 +1,15 @@
 {
   "name": "turbo-mono",
   "version": "0.1.0",
+  "private": true,
   "license": "MIT",
   "author": "bek <geebrox@gmail.com>",
-  "workspaces": [],
-  "scripts": {},
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev"
+  },
   "dependencies": {},
   "devDependencies": {
     "prettier": "^2.7.1",
