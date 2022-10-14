@@ -5,8 +5,8 @@
   "scripts": {
     "build": "nest build",
     "dev": "nest start --watch",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint \"src/**/*.ts\" --fix",
+    "format": "prettier --write \"./**/*.[jt]s?(x)\"",
+    "lint": "eslint \"src/**/*.[jt]s?(x)\" --fix",
     "start": "node dist/main"
   },
   "dependencies": {
