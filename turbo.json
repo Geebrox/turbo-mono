@@ -3,6 +3,12 @@
   "pipeline": {
     "dev": {
       "cache": false
+    },
+    "format": {
+      "outputs": []
+    },
+    "lint": {
+      "outputs": []
     }
   }
 }
