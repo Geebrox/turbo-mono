@@ -1,0 +1,31 @@
+{
+  "name": "turbo-mono",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "author": "bek <geebrox@gmail.com>",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "format": "turbo format",
+    "lint": "turbo lint"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^18.8.5",
+    "eslint": "^8.25.0",
+    "eslint-config-custom": "*",
+    "prettier": "^2.7.1",
+    "tsconfig": "*",
+    "turbo": "^1.5.6",
+    "typescript": "^4.8.4"
+  },
+  "packageManager": "yarn@1.22.19",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
