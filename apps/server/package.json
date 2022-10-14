@@ -21,7 +21,6 @@
     "@nestjs/schematics": "^9.0.3",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
-    "eslint-plugin-custom": "*",
     "fastify": "^4.8.1",
     "source-map-support": "^0.5.21",
     "ts-loader": "^9.4.1",
