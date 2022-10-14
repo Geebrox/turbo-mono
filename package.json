@@ -8,7 +8,9 @@
     "apps/*"
   ],
   "scripts": {
-    "dev": "turbo dev"
+    "dev": "turbo dev",
+    "format": "turbo format",
+    "lint": "turbo lint"
   },
   "dependencies": {},
   "devDependencies": {
