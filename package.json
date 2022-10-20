@@ -13,7 +13,8 @@
     "clean": "turbo clean",
     "dev": "turbo dev",
     "format": "turbo format",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "sort-packages": "npx sort-package-json \"package.json\" \"apps/*/package.json\" \"packages/*/package.json\""
   },
   "dependencies": {},
   "devDependencies": {
