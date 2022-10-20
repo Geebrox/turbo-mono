@@ -16,7 +16,9 @@
     "lint": "turbo lint",
     "sort-packages": "npx sort-package-json \"package.json\" \"apps/*/package.json\" \"packages/*/package.json\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "@prisma/client": "^4.5.0"
+  },
   "devDependencies": {
     "@types/node": "^18.8.5",
     "concurrently": "^7.4.0",
@@ -24,6 +26,7 @@
     "eslint-config-custom": "*",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
+    "prisma": "^4.5.0",
     "rimraf": "^3.0.2",
     "tsconfig": "*",
     "turbo": "^1.5.6",
