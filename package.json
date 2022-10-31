@@ -11,10 +11,12 @@
   "scripts": {
     "build": "turbo build",
     "clean": "turbo clean",
-    "dev": "turbo dev",
+    "db-generate": "turbo db-generate",
+    "dev": "dotenv -e .env turbo dev",
     "format": "turbo format",
     "lint": "turbo lint",
-    "sort-packages": "npx sort-package-json \"package.json\" \"apps/*/package.json\" \"packages/*/package.json\""
+    "sort-packages": "npx sort-package-json \"package.json\" \"apps/*/package.json\" \"packages/*/package.json\"",
+    "start": "turbo start"
   },
   "dependencies": {
     "@prisma/client": "^4.5.0"
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@types/node": "^18.8.5",
     "concurrently": "^7.4.0",
+    "dotenv-cli": "^6.0.0",
     "eslint": "^8.25.0",
     "eslint-config-custom": "*",
     "prettier": "^2.7.1",
