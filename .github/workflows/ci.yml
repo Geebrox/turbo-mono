@@ -46,4 +46,4 @@ jobs:
           key: ${{ runner.os }}-${{ runner.node }}-${{ hashFiles('**/yarn.lock') }}-nextjs
 
       - name: Build and lint
-        run: yarn turbo build lint
+        run: yarn turbo link && yarn turbo build lint
