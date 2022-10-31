@@ -5,7 +5,7 @@
   "scripts": {
     "build": "nest build",
     "dev": "nest start --watch --preserveWatchOutput",
-    "format": "prettier --write \"./**/*.[jt]s?(x)\"",
+    "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write \"./**/*.[jt]s?(x)?(on)\"",
     "lint": "eslint \"src/**/*.[jt]s?(x)\" --fix",
     "start": "node dist/main"
   },

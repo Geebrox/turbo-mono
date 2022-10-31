@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "main": "tailwind.config.js",
+  "scripts": {
+    "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write \"./**/*.[jt]s?(x)?(on)\""
+  },
   "devDependencies": {
     "tailwindcss": "^3.2.0"
   }

@@ -12,6 +12,7 @@
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react && tailwindcss -i ./src/styles.css -o ./dist/styles.css",
     "clean": "rimraf -rf dist",
     "dev": "concurrently \"tsup src/index.tsx --format esm,cjs --dts --external react --watch\" \"tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch\"",
+    "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write \"./**/*.[jt]s?(x)?(on)\"",
     "lint": "TIMING=1 eslint \"./**/*.[jt]s?(x)\" --fix"
   },
   "devDependencies": {

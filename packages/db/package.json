@@ -6,6 +6,7 @@
   "types": "./index.ts",
   "scripts": {
     "clean": "rimraf .turbo node_modules",
-    "db-generate": "prisma generate"
+    "db-generate": "prisma generate",
+    "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write \"./**/*.[jt]s?(x)?(on)\""
   }
 }

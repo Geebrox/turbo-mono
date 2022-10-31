@@ -1,9 +1,9 @@
+import { ConsoleLogger, Logger, ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
-import { FastifyAdapter as Adapter } from '@nestjs/platform-fastify';
 import type { NestFastifyApplication as App } from '@nestjs/platform-fastify';
+import { FastifyAdapter as Adapter } from '@nestjs/platform-fastify';
 import { AppModule } from './app.module';
 import { PrismaService } from './modules/prisma/prisma.service';
-import { ConsoleLogger, Logger, ValidationPipe } from '@nestjs/common';
 
 (async () => {
   const app = await NestFactory.create<App>(AppModule, new Adapter(), {
