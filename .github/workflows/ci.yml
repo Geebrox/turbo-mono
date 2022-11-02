@@ -1,10 +1,10 @@
 name: CI
 
 on:
-  pull_request:
-    branches: ["*"]
   push:
     branches: ["main"]
+  pull_request:
+    types: [opened, synchronize]
 
 env:
   TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
@@ -46,4 +46,4 @@ jobs:
           key: ${{ runner.os }}-${{ runner.node }}-${{ hashFiles('**/yarn.lock') }}-nextjs
 
       - name: Build and lint
-        run: yarn turbo link && yarn turbo build lint
+        run: yarn turbo build lint
