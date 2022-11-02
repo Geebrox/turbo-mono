@@ -12,6 +12,8 @@ env:
 
 jobs:
   build-lint:
+    name: Build and Test
+    timeout-minutes: 15
     runs-on: ubuntu-latest
 
     steps:
