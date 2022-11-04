@@ -7,11 +7,12 @@ import {
   Patch,
   Post,
 } from '@nestjs/common';
+import { ROUTES } from 'shared';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
 import { TodosService } from './todos.service';
 
-@Controller('/todos')
+@Controller(ROUTES.TODOS)
 export class TodosController {
   constructor(private readonly todosService: TodosService) {}
 
