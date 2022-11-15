@@ -5,7 +5,8 @@
   "files": [
     "nest.json",
     "next.json",
-    "react.json"
+    "react.json",
+    "node.json"
   ],
   "scripts": {
     "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write \"./**/*.[jt]s?(x)?(on)\""
