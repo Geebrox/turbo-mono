@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
+  "scripts": {
+    "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write \"./**/*.[jt]s?(x)?(on)\""
+  },
   "dependencies": {
     "eslint-config-next": "^12.3.1",
     "eslint-config-prettier": "^8.5.0",

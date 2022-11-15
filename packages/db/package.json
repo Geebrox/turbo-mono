@@ -1,13 +1,12 @@
 {
-  "name": "tsconfig",
+  "name": "db",
   "version": "0.1.0",
   "private": true,
-  "files": [
-    "nest.json",
-    "next.json",
-    "react.json"
-  ],
+  "main": "./index.ts",
+  "types": "./index.ts",
   "scripts": {
+    "clean": "rimraf .turbo node_modules",
+    "db-generate": "prisma generate",
     "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write \"./**/*.[jt]s?(x)?(on)\""
   }
 }

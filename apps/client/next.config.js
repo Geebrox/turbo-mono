@@ -1,4 +1,4 @@
-const withTM = require('next-transpile-modules')(['ui']);
+const withTM = require('next-transpile-modules');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -6,4 +6,4 @@ const nextConfig = {
   swcMinify: true,
 };
 
-module.exports = withTM(nextConfig);
+module.exports = withTM(['db'])(nextConfig);

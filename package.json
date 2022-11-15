@@ -10,16 +10,29 @@
   ],
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "clean": "turbo clean",
+    "db-generate": "turbo db-generate",
+    "dev": "dotenv -e .env turbo dev",
     "format": "turbo format",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "prepare": "husky install",
+    "sort-packages": "npx sort-package-json \"package.json\" \"apps/*/package.json\" \"packages/*/package.json\"",
+    "start": "turbo start"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@prisma/client": "^4.5.0"
+  },
   "devDependencies": {
     "@types/node": "^18.8.5",
+    "concurrently": "^7.4.0",
+    "dotenv-cli": "^6.0.0",
     "eslint": "^8.25.0",
     "eslint-config-custom": "*",
+    "husky": "^8.0.0",
     "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "prisma": "^4.5.0",
+    "rimraf": "^3.0.2",
     "tsconfig": "*",
     "turbo": "^1.5.6",
     "typescript": "^4.8.4"
