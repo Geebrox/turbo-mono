@@ -2,16 +2,8 @@
   "name": "ui",
   "version": "0.1.0",
   "private": true,
-  "exports": {
-    ".": "./dist",
-    "./styles.css": "./dist/styles.css"
-  },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react && tailwindcss -i ./src/styles.css -o ./dist/styles.css",
     "clean": "rimraf -rf dist",
-    "dev": "concurrently \"tsup src/index.tsx --format esm,cjs --dts --external react --watch\" \"tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch\"",
     "format": "prettier --config ../../.prettierrc --ignore-path ../../.prettierignore --write \"./**/*.[jt]s?(x)?(on)\"",
     "lint": "TIMING=1 eslint \"./**/*.[jt]s?(x)\" --fix"
   },
@@ -19,8 +11,6 @@
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "react": "18.2.0",
-    "tailwind-config": "*",
-    "tailwindcss": "^3.2.0",
-    "tsup": "^6.3.0"
+    "tailwind-config": "*"
   }
 }
