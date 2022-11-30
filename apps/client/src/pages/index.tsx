@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
 import { ROUTES } from 'shared';
-import { Button } from 'ui';
+import { FilledButton } from 'ui/Button';
 
 const Home: NextPage = () => {
   return (
     <div>
       <h1>Hello, world!</h1>
       <pre>{ROUTES.TODOS}</pre>
-      <Button />
+      <FilledButton />
     </div>
   );
 };

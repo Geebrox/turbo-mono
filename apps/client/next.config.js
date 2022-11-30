@@ -6,4 +6,4 @@ const nextConfig = {
   swcMinify: true,
 };
 
-module.exports = withTM(['db'])(nextConfig);
+module.exports = withTM(['db', 'ui'])(nextConfig);
